@@ -8,7 +8,7 @@ public class PalindromeNumber {
         while(num > 0){
             num = num%10;
 
-            swap = num;
+            swap=num;
         }
         
         System.out.println(swap);
