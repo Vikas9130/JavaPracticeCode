@@ -20,10 +20,10 @@ public class SecondLargestFromArray {
     
     }
     public static void main(String[] args) {
-        int[] arr = {-1,-2,-3,-4};
+        int[] arr = {-1000,-20000,-3000000,-400000};
        
-    int large = -100;
-    int secLarge = -100;
+    int large = Integer.MIN_VALUE;
+    int secLarge = Integer.MIN_VALUE;
     for(int i=0; i<arr.length; i++){
         
         if(large<arr[i]){
