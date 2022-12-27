@@ -1,4 +1,13 @@
 package assignment;
+/*
+ Assignment 8 : Remove duplicates from sorted array
+ Given a sorted array, the task is to remove the duplicate elements from the array.
+ */
+/*
+  solved on 27-12-2022
+  time complexity = O(n2)
+  space complexity = S(1)
+ */
 
 public class RemoveDuplicateFromArray {
 
