@@ -5,7 +5,7 @@ package assignment;
  */
 /*
   solved on 27-12-2022
-  time complexity = O(n2)
+  time complexity = O(n2+3n)
   space complexity = S(1)
  */
 
