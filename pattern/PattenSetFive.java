@@ -2,10 +2,10 @@ package pattern;
 
 public class PattenSetFive {
     public static void main(String[] args) {
-        pattern3(9);
+        pattern1(9);
         
         }
-    }
+    
 //inverted pyramid
     public static void pattern3(int n){
 

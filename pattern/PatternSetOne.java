@@ -1,6 +1,6 @@
 package pattern;
 
-import javax.lang.model.util.ElementScanner14;
+
 
 public class PatternSetOne {
     public static void main(String[] args) {
