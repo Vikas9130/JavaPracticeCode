@@ -35,7 +35,7 @@ public class RemoveDuplicateFromArray1 {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {-1,-2,-5,0,-6,-1,6,5,4,8};
+        int[] arr = {2,2,2};
         int size = arr.length;
         removeDuplicate(size, arr);
     }

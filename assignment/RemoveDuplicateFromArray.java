@@ -2,39 +2,42 @@ package assignment;
 
 public class RemoveDuplicateFromArray {
 
-    public static void removeDuplicateEle(int size, int[] arr){
-
-        //int[] temp = new int[size];
+    public static int removeDuplicateEle(int size, int[] arr){
         int count = 0;
-        int[] temp=new int[count];
+        int[] temp = new int[size];
         for(int i=0; i<size; i++){
             for(int j=0; j<size; j++){
-                if(arr[i] > arr[j]){
+                if(arr[i] < arr[j]){
                     int swap = arr[i];
-                    arr[j] = arr[i];
+                    arr[i] = arr[j];
                     arr[j] = swap;
                 }
-                if(arr[i] != arr[j]){
-                 temp = new int[count];
-                  temp[count] = arr[i];
-                  count++;
-                }   
             }
         }
+        for(int i=0; i<size-1; i++){
+            if(arr[i] != arr[i+1]){
+                temp[count++] = arr[i];
+            }
+        }
+       
+        temp[count++] = arr[size-1];
         for(int i=0; i<count; i++){
             arr[i] = temp[i];
-            System.out.print(arr[i]+" ");
         }
-        
-
        
+        return count;
     }
-    public static void main(String[] args) {
-        int[] arr= {5,4,2,7,9,1};
-        int size = arr.length;
-        removeDuplicateEle(size, arr);
 
+    public static void main(String[] args) {
+        int[] arr = {2,2,2,2,2};
+        int size = arr.length;
+        int newV = removeDuplicateEle(size, arr);
+       for(int i=0; i<newV; i++){
+        System.out.print(arr[i]+" ");
+       }
         
     }
+
+   
     
 }
