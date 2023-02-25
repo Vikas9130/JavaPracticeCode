@@ -11,7 +11,7 @@ public class SwapTwoNumWithOutThirdVar {
         System.out.println("After swapping b : "+b);
     }
     public static void main(String[] args) {
-        int a=10, b=20;
+        int a=-10, b=20;
         swapTwoNumberWithThirdVar(a, b);
     }
     
